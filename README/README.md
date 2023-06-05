@@ -9,6 +9,8 @@
 
 
 In order to use MTCNN CROPPER you must install these resources<br>
+
+
 **MTCNN + ALIGNMENT**
 
 ```

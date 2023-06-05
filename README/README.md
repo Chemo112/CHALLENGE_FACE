@@ -33,7 +33,7 @@ This repository is not intended to be a face recognition api but a simple exampl
 
 **REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER**<br>
 
-PS: Yolo utilizes cpu as default device but you can modify the function "_cropSingle" of YOLO_COPPER.py to use GPU (suggested for speed)
+PS: Yolov8 from Ultralytics utilizes cpu as default device but you can modify the function "_cropSingle" of YOLO_COPPER.py to use GPU (suggested for speed)
 ## <a name="_vukt58vmntn8"></a>**Introduction** 
 Image retrieval and classification are extensively employed techniques within the field of computer vision, each serving distinct purposes despite their shared goal of identifying similarities in the data. Image retrieval aims to determine similarities among images and rank them when presented with a query, while classification involves training a model to predict the class or group of new data accurately. Notably, classification requires labeled training data, whereas retrieval relies on a distance-based approach without such labels.
 
@@ -122,7 +122,7 @@ In conclusion, the outcomes affirm the value of incorporating pre-trained models
 - J. Xiang and G. Zhu, "Joint Face Detection and Facial Expression Recognition with MTCNN," *2017 4th International Conference on Information Science and Control Engineering (ICISCE)*, Changsha, China, 2017, pp. 424-427, doi: 10.1109/ICISCE.2017.95.
 - Redmon, Joseph & Divvala, Santosh & Girshick, Ross & Farhadi, Ali. (2016). “You Only Look Once: Unified, Real-Time Object Detection”. 779-788. 10.1109/CVPR.2016.91.
 - Liu, Weiyang & Wen, Yandong & Yu, Zhiding & Li, Ming & Raj, Bhiksha & Song, Le. (2017). “SphereFace: Deep Hypersphere Embedding for Face Recognition”. 10.1109/CVPR.2017.713.
-- Jocher, G., Chaurasia, A., & Qiu, J. (2023). YOLO by Ultralytics (Version 8.0.0). https://github.com/ultralytics/ultralytics
+- Jocher, G., Chaurasia, A., & Qiu, J. (2023). YOLO by Ultralytics (Version 8.0.0).
 
 ![footer line](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.001.png)
 

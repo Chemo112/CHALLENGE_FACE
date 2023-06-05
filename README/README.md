@@ -54,14 +54,14 @@ Two models were implemented to complete image retrieval: ArcFace and FaceNet. Th
 
 <a name="_5sng333sja1j"></a>*Table 1: Comparison table between ArcFace and FaceNet*
 
-||**ArcFace**|**FaceNet**|
-| - | - | - |
-|**Training dataset**|MS-Celeb-1M|CASIA-WebFace|
-|**Optimizer**|Softmax Activation|ReLU (Rectified Linear Unit)|
-|**Loss Function**|Additive Angular Margin Loss|Triplet Loss|
-|**Model Architecture**|CNN architecture|Siamese network architecture|
-|**Normalization technique**|SphereFace-like normalization|L2 normalization|
-|**Embedding distance**|squared Euclidean distance|Manhattan distance, Linear distance, Cosine distance|
+|                            | **ArcFace**                   |**FaceNet**|
+|----------------------------|-------------------------------| - |
+| **Training dataset**       | MS-Celeb-1M                   |CASIA-WebFace|
+| **Optimizer**              | Softmax Activation            |ReLU (Rectified Linear Unit)|
+| **Loss Function**          | Additive Angular Margin Loss  |Triplet Loss|
+| **Model Architecture**     | CNN architecture              |Siamese network architecture|
+| **Normalization technique** | SphereFace-like normalization |L2 normalization|
+| **Embedding distance**     | Squared Euclidean distance    |Manhattan distance, Linear distance, Cosine distance|
 
 1. **Pre trained model**
 
@@ -69,9 +69,9 @@ To tackle the challenge, the decision was made to employ state-of-the-art algori
 ## <a name="_ms1jpxlikzp0"></a>**Results**
 <a name="_xlwijkl5yuj8"></a>*Table 2: Comparison table for the results of the models submitted to the challenge.*
 
-| **Model submitted**                   |        |     **Accuracy**   |        |
-|---------------------------------------|--------|--------|--------|     
-|                                       | Top 1  | Top 5  | Top 10 |
+| **Model submitted**                   |        | **Accuracy** |        |
+|---------------------------------------|--------|-------|--------|     
+|                                       | Top 1  | Top 5 | Top 10 |
 | ArcFace                               | 0\.290 | 0\.421 | 0\.505 |
 | MTCNN + ArcFace                       | 0\.972 | 0\.981 | 0\.981 |
 | MTCNN + FaceNet (manhattan)           | 0\.953 | 0\.963 | 0\.972 |

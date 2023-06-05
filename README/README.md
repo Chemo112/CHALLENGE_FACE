@@ -20,11 +20,10 @@ For problems with packages in MTCNN CROPPER refer to this repository or the inst
 https://github.com/Martlgap/face-alignment-mtcnn 
 </a>
 
-<br>
-For problems with paths just check the initial section of each .py file
+For problems with paths just check the initial section of each .py file.
 This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
 
-REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER
+REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER<br>
 PS: Yolo utilizes cpu as default device but you can modify the module "crop_single" in YOLO_COPPER.py to use GPU (suggested for speed)
 ## <a name="_vukt58vmntn8"></a>**Introduction** 
 Image retrieval and classification are extensively employed techniques within the field of computer vision, each serving distinct purposes despite their shared goal of identifying similarities in the data. Image retrieval aims to determine similarities among images and rank them when presented with a query, while classification involves training a model to predict the class or group of new data accurately. Notably, classification requires labeled training data, whereas retrieval relies on a distance-based approach without such labels.

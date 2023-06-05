@@ -42,7 +42,7 @@ However, computer vision encompasses a broader range of tasks beyond retrieval a
 To achieve this, the YOLO and MTCNN algorithms were utilized for face detection. The subsequent results demonstrated the effectiveness of this combined approach in enhancing the image retrieval process. To evaluate the performance of the models, accuracy metrics  top-1, top-5, and top-10 were employed. These metrics provide a means to assess how well the algorithm performs in correctly identifying the match within the top-k predictions, thus providing a measure of its effectiveness.
 ## <a name="_11l0kphlav3r"></a>**Methodology**
 
-1. **Face detection task**
+**Face detection task**
 
 To prepare the images for classification, two different algorithms were used: MTCNN (Multi-task Cascaded Convolutional Networks) and YOLO (You Only Look Once). They’re both pre-trained models, but they differ in their approach to the cropping and centralisation procedure:
 
@@ -51,7 +51,7 @@ To prepare the images for classification, two different algorithms were used: MT
 
 Moreover, it is important to consider and, thus, underline that the two models were trained for different purposes: while MTCNN is a face detection method, YOLO is, as stated above, an object detection method. However, to achieve our results we used *YOLO Face* that specifically refers to the application of the YOLO algorithm for face detection purposes. This difference resulted also in the computations, as YOLO indeed detected objects in the image gallery, while MTCNN only faces.
 
-1. **Image retrieval task**
+**Image retrieval task**
 
 Two models were implemented to complete image retrieval: ArcFace and FaceNet. They both utilize deep learning architectures, such as Convolutional Neural Networks (CNNs).
 
@@ -67,7 +67,7 @@ Two models were implemented to complete image retrieval: ArcFace and FaceNet. Th
 |**Normalization technique**|SphereFace-like normalization|L2 normalization|
 |**Embedding distance**|Squared Euclidean distance|<p>Manhattan distance, </p><p>Linear distance, </p><p>Cosine distance</p>|
 
-1. **Pre trained model**
+**Pre trained model**
 
 To tackle the challenge, the decision was made to employ state-of-the-art algorithms known for their exceptional performance. The concept of transfer learning proves to be immensely valuable as it allows the models to leverage the acquired representations and feature extraction capabilities attained through extensive training on large datasets. This approach significantly reduces the time and computational resources required compared to training a model from scratch. Additionally, pretrained models generally possess a wealth of rich and versatile features that can be transferred across tasks, rendering them highly effective for a range of related tasks.
 ## <a name="_ms1jpxlikzp0"></a>**Results**

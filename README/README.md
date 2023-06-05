@@ -69,16 +69,16 @@ To tackle the challenge, the decision was made to employ state-of-the-art algori
 ## <a name="_ms1jpxlikzp0"></a>**Results**
 <a name="_xlwijkl5yuj8"></a>*Table 2: Comparison table for the results of the models submitted to the challenge.*
 
-|**Model submitted**|**Accuracy**|
-| :- | :-: |
-||Top 1|Top 5|Top 10|
-|ArcFace|0\.290|0\.421|0\.505|
-|MTCNN + ArcFace|0\.972|0\.981|0\.981|
-|MTCNN + FaceNet (manhattan)|0\.953|0\.963|0\.972|
-|MTCNN + FaceNet (linear)|0\.943|0\.962|0\.971|
-|MTCNN + FaceNet (cosine)|0\.944|0\.963|0\.972|
-|YOLO (with confidence= 0.49) + ArcFace|0\.729|0\.804|0\.832|
-|YOLO (with confidence= 0.25) + ArcFace|0\.822|0\.907|0\.935|
+| **Model submitted**                   | **Accuracy** |
+|---------------------------------------|-----|   |    |       
+|                                       | Top 1|Top 5|Top 10|
+| ArcFace                               | 0\.290|0\.421|0\.505|
+| MTCNN + ArcFace                       | 0\.972|0\.981|0\.981|
+| MTCNN + FaceNet (manhattan)           | 0\.953|0\.963|0\.972|
+| MTCNN + FaceNet (linear)              | 0\.943|0\.962|0\.971|
+| MTCNN + FaceNet (cosine)              | 0\.944|0\.963|0\.972|
+| YOLO (with confidence= 0.49) + ArcFace | 0\.729|0\.804|0\.832|
+| YOLO (with confidence= 0.25) + ArcFace | 0\.822|0\.907|0\.935|
 
 As it can be shown in the table above, we tried different models. Among these, the most successful ones were the combination of  MTCNN and FaceNet and the combination of YOLO and ArcFace. It’s important to notice that for the former we also tried different distances in the computation of the similarity, while for the latter we tried different confidence levels in the face detection task. 
 

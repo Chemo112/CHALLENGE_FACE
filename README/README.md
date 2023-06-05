@@ -9,10 +9,15 @@
 
 
 In order to use MTCNN CROPPER you must install these resources<br>
-<a>pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime <br>
+<a>
+'''
+pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime <br>
+'''
 </a> 
 <a>
+'''
 pip3 install git+https://github.com/martlgap/face-alignment-mtcnn <br>
+'''
 </a>
 
 For problems with packages in MTCNN CROPPER refer to this repository or the installation of facealignment and tflite-runtime:<br>
@@ -20,7 +25,7 @@ For problems with packages in MTCNN CROPPER refer to this repository or the inst
 https://github.com/Martlgap/face-alignment-mtcnn 
 </a>
 
-For problems with paths just check the initial section of each .py file.
+For problems with paths just check the initial section of each .py file.<br>
 This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
 
 REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER<br>

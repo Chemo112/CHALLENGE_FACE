@@ -123,7 +123,7 @@ In conclusion, the outcomes affirm the value of incorporating pre-trained models
 - Redmon, Joseph & Divvala, Santosh & Girshick, Ross & Farhadi, Ali. (2016). “You Only Look Once: Unified, Real-Time Object Detection”. 779-788. 10.1109/CVPR.2016.91.
 - Liu, Weiyang & Wen, Yandong & Yu, Zhiding & Li, Ming & Raj, Bhiksha & Song, Le. (2017). “SphereFace: Deep Hypersphere Embedding for Face Recognition”. 10.1109/CVPR.2017.713.
 - Jocher, G., Chaurasia, A., & Qiu, J. (2023). YOLO by Ultralytics (Version 8.0.0).
-
-![footer line](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.001.png)
+- 
+![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.001.png)
 
 

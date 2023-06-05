@@ -1,13 +1,4 @@
-﻿IN ORDER TO USE MTCNN CROPPER YOU MUST INSTALL THIS RESOURCES
-pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime
-pip3 install git+https://github.com/martlgap/face-alignment-mtcnn
 
-FOR PROBLEM WITH PACKAGES IN MTCNN CROPPER REFER TO https://github.com/Martlgap/face-alignment-mtcnn 
-FOR THE INSTALLATION OF BOTH facealignment and tflite-runtime
-
-FOR PROBLEMS WITH PATHS JUST CHECK THE INITIAL SECTION OF EACH .PY FILE
-
-THIS REPOSITORY IS NOT INTENDEED TO BE A FACE RECOGNITION API BUT A SIMPLE EXAMPLE FOR A FACE RECOGNITION CHALLENGE
 
 
 ![header line](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.001.png)
@@ -15,6 +6,24 @@ THIS REPOSITORY IS NOT INTENDEED TO BE A FACE RECOGNITION API BUT A SIMPLE EXAMP
 <a name="_i9npdp6lp7kp"></a><a name="_nrnw03t7conb"></a>**“The Algorithm Avengers”**
 Introduction to Machine Learning
 # <a name="_s44548ln3mw"></a>Mattia Chemotti, Juana Sofia Cruz Contento, Maja Dall’Acqua, Barbara Pacetta ![linea orizzontale](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.002.png)
+
+
+## <a name="_vukt58vmncn8"></a>**Install** 
+
+
+﻿IN ORDER TO USE MTCNN CROPPER YOU MUST INSTALL THIS RESOURCES
+
+pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime
+pip3 install git+https://github.com/martlgap/face-alignment-mtcnn
+
+FOR PROBLEM WITH PACKAGES IN MTCNN CROPPER REFER TO 
+https://github.com/Martlgap/face-alignment-mtcnn 
+
+FOR THE INSTALLATION OF BOTH facealignment and tflite-runtime
+FOR PROBLEMS WITH PATHS JUST CHECK THE INITIAL SECTION OF EACH .PY FILE
+THIS REPOSITORY IS NOT INTENDEED TO BE A FACE RECOGNITION API BUT A SIMPLE EXAMPLE FOR A FACE RECOGNITION CHALLENGE
+
+
 ## <a name="_vukt58vmntn8"></a>**Introduction** 
 Image retrieval and classification are extensively employed techniques within the field of computer vision, each serving distinct purposes despite their shared goal of identifying similarities in the data. Image retrieval aims to determine similarities among images and rank them when presented with a query, while classification involves training a model to predict the class or group of new data accurately. Notably, classification requires labeled training data, whereas retrieval relies on a distance-based approach without such labels.
 

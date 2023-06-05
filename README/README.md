@@ -1,11 +1,31 @@
-﻿
+﻿![header line](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.001.png)
 
-![header line](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.001.png)
+<a name="_i9npdp6lp7kp"></a><a name="_nrnw03t7conb"></a>Mattia Chemotti, Juana Sofia Cruz Contento, Maja Dall’Acqua, Barbara Pacetta
+# <a name="_s44548ln3mw"></a>The Algorithm Avengers - Introduction to Machine Learning 
+![linea orizzontale](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.002.png)
 
-<a name="_i9npdp6lp7kp"></a><a name="_nrnw03t7conb"></a>**“The Algorithm Avengers”**
-Introduction to Machine Learning
-# <a name="_s44548ln3mw"></a>Mattia Chemotti, Juana Sofia Cruz Contento, Maja Dall’Acqua, Barbara Pacetta![linea orizzontale](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.002.png)
-## <a name="_z1rbgk8fq6qu"></a>*Github link: <https://github.com/Chemo112/CHALLENGE_FACE>* 
+
+## <a name="_vukt58vmncn8"></a>**Install and configure** 
+
+
+In order to use MTCNN CROPPER you must install these resources<br>
+<a>pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime <br>
+</a> 
+<a>
+pip3 install git+https://github.com/martlgap/face-alignment-mtcnn <br>
+</a>
+
+For problems with packages in MTCNN CROPPER refer to this repository:<br>
+<a>
+https://github.com/Martlgap/face-alignment-mtcnn 
+</a>
+
+For the installation of facealignment and tflite-runtime<br>
+For problems with paths just check the initial section of each .py file
+This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
+
+REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER
+PS: Yolo utilizes cpu as default device but you can modify the module "crop_single" in YOLO_COPPER.py to use GPU (suggested for speed)
 ## <a name="_vukt58vmntn8"></a>**Introduction** 
 Image retrieval and classification are extensively employed techniques within the field of computer vision, each serving distinct purposes despite their shared goal of identifying similarities in the data. Image retrieval aims to determine similarities among images and rank them when presented with a query, while classification involves training a model to predict the class or group of new data accurately. Notably, classification requires labeled training data, whereas retrieval relies on a distance-based approach without such labels.
 

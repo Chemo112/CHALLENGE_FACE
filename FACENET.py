@@ -6,7 +6,7 @@ import tensorflow as tf
 
 """**CARICO IL MODELLO E LO COMPILO**"""
 
-facenet = keras.models.load_model("/facenet")
+facenet = keras.models.load_model("/models/facenet")
 
 IMAGE_HEIGHT, IMAGE_WIDTH = 160, 160
 IMAGE_SIZE = (IMAGE_WIDTH, IMAGE_HEIGHT, 3) #whc

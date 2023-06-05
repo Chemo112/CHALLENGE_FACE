@@ -31,7 +31,8 @@ https://github.com/Martlgap/face-alignment-mtcnn
 For problems with paths just check the initial section of each .py file.<br>
 This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
 
-REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER<br>
+**REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER**<br>
+
 PS: Yolo utilizes cpu as default device but you can modify the module "crop_single" in YOLO_COPPER.py to use GPU (suggested for speed)
 ## <a name="_vukt58vmntn8"></a>**Introduction** 
 Image retrieval and classification are extensively employed techniques within the field of computer vision, each serving distinct purposes despite their shared goal of identifying similarities in the data. Image retrieval aims to determine similarities among images and rank them when presented with a query, while classification involves training a model to predict the class or group of new data accurately. Notably, classification requires labeled training data, whereas retrieval relies on a distance-based approach without such labels.

@@ -93,22 +93,22 @@ When an image detection is performed, the accuracy steeply increases, although w
 
 <a name="_lhp31t7ydlqm"></a>*Image 1: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 without any image preparation and using Arcface model for image retrieval.*
 
-## ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.003.png)
+# ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.003.png)
 
 <a name="_2srr3k0td4s"></a><a name="_mgfhbdrioibl"></a><a name="_e6yit6qomr3s"></a>*Image 2: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using YOLO model for image preparation and ArcFace model for image retrieval.*
 
-## ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.004.png)
+# ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.004.png)
 
  <a name="_vdmn30bf7vcg"></a><a name="_a1z2x5pawhd9"></a>*Image 3: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using MTCNN model for image preparation and ArcFace model for image retrieval.*
 
-## ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.005.png)
+# ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.005.png)
 ## <a name="_3exfy5ca5gfq"></a>**Discussion**
 As mentioned and analyzed above, the main difference between the two models (YOLO and MTCNN) we used lies in the task they were called upon to fulfill. In simulation practice and thus applied to the dataset provided to us, this led to different results in face detection. 
 
 The following image serves as an illustration of the aforementioned distinctions. MTCNN, a face detection model, overlooked this particular aspect while performing the cropping task, thus necessitating the manual inclusion of the image below into the query folder. On the other hand, YOLO, an object detection algorithm, successfully recognized the same image due to its ability to also identify non-human faces.
 
 <a name="_35nkr43ucl5v"></a>*Image 4: Top 10 results for query image de5764aa9711a4ef4421c95456b764a5c9c837a without using a model for image preparation and ArcFace model for image retrieval.*
-## ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.006.png)
+# ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.006.png)
 <a name="_w5uvrxcnla04"></a>The accuracy of the results obtained is certainly due to the specificity of the chosen model. In fact, MTCNN bases its accuracy on face alignment and detection of key facial points; its ability to detect faces in different lighting conditions, orientation were the key points on which we based our choice.
 
 Another notable approach that yielded promising results involved the utilization of the MTCNN and ArcFace combination, as well as the MTCNN and FaceNet combination. However, what set these combinations apart was the employment of a different distance metric-specifically, the Manhattan distance. The Manhattan distance demonstrated superior performance, which can be attributed to its inherent robustness in handling outliers. This alternative strategy showcased its efficacy in achieving favorable outcomes.

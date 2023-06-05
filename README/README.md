@@ -1,41 +1,17 @@
-![header line](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.001.png)
+﻿
 
-<a name="_i9npdp6lp7kp"></a><a name="_nrnw03t7conb"></a>Mattia Chemotti, Juana Sofia Cruz Contento, Maja Dall’Acqua, Barbara Pacetta
-# <a name="_s44548ln3mw"></a>The Algorithm Avengers - Introduction to Machine Learning 
-![linea orizzontale](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.002.png)
+![header line](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.001.png)
 
-
-## <a name="_vukt58vmncn8"></a>**Install and configure** 
-
-
-In order to use MTCNN CROPPER you must install these resources<br>
-<a>pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime <br>
-</a> 
-<a>
-pip3 install git+https://github.com/martlgap/face-alignment-mtcnn <br>
-</a>
-
-For problems with packages in MTCNN CROPPER refer to this repository:<br>
-<a>
-https://github.com/Martlgap/face-alignment-mtcnn 
-</a>
-
-For the installation of facealignment and tflite-runtime<br>
-For problems with paths just check the initial section of each .py file
-This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
-
-REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER
-PS: Yolo utilizes cpu as default device but you can modify the module "crop_single" in YOLO_COPPER.py to use GPU (suggested for speed)
-
+<a name="_i9npdp6lp7kp"></a><a name="_nrnw03t7conb"></a>**“The Algorithm Avengers”**
+Introduction to Machine Learning
+# <a name="_s44548ln3mw"></a>Mattia Chemotti, Juana Sofia Cruz Contento, Maja Dall’Acqua, Barbara Pacetta![linea orizzontale](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.002.png)
+## <a name="_z1rbgk8fq6qu"></a>*Github link: <https://github.com/Chemo112/CHALLENGE_FACE>* 
 ## <a name="_vukt58vmntn8"></a>**Introduction** 
 Image retrieval and classification are extensively employed techniques within the field of computer vision, each serving distinct purposes despite their shared goal of identifying similarities in the data. Image retrieval aims to determine similarities among images and rank them when presented with a query, while classification involves training a model to predict the class or group of new data accurately. Notably, classification requires labeled training data, whereas retrieval relies on a distance-based approach without such labels.
 
 However, computer vision encompasses a broader range of tasks beyond retrieval and classification. In the specific project discussed, the objective was to rank multiple images in accordance with a query comprising actors. Although retrieval was a component of the methodology, it was not the sole approach adopted. Object detection and face recognition  was also incorporated as an additional technique to detect the faces of the actors and improve the accuracy of image retrieval.
 
 To achieve this, the YOLO and MTCNN algorithms were utilized for face detection. The subsequent results demonstrated the effectiveness of this combined approach in enhancing the image retrieval process. To evaluate the performance of the models, accuracy metrics  top-1, top-5, and top-10 were employed. These metrics provide a means to assess how well the algorithm performs in correctly identifying the match within the top-k predictions, thus providing a measure of its effectiveness.
-
-
-
 ## <a name="_11l0kphlav3r"></a>**Methodology**
 
 1. **Face detection task**
@@ -54,14 +30,14 @@ Two models were implemented to complete image retrieval: ArcFace and FaceNet. Th
 
 <a name="_5sng333sja1j"></a>*Table 1: Comparison table between ArcFace and FaceNet*
 
-|                            | **ArcFace**                   |**FaceNet**|
-|----------------------------|-------------------------------| - |
-| **Training dataset**       | MS-Celeb-1M                   |CASIA-WebFace|
-| **Optimizer**              | Softmax Activation            |ReLU (Rectified Linear Unit)|
-| **Loss Function**          | Additive Angular Margin Loss  |Triplet Loss|
-| **Model Architecture**     | CNN architecture              |Siamese network architecture|
-| **Normalization technique** | SphereFace-like normalization |L2 normalization|
-| **Embedding distance**     | Squared Euclidean distance    |Manhattan distance, Linear distance, Cosine distance|
+||**ArcFace**|**FaceNet**|
+| :-: | :-: | :-: |
+|**Training dataset**|MS-Celeb-1M|CASIA-WebFace|
+|**Optimizer**|Softmax Activation|ReLU (Rectified Linear Unit)|
+|**Loss Function**|Additive Angular Margin Loss|Triplet Loss|
+|**Model Architecture**|CNN architecture|Inception ResNet v1 architecture|
+|**Normalization technique**|SphereFace-like normalization|L2 normalization|
+|**Embedding distance**|Squared Euclidean distance|<p>Manhattan distance, </p><p>Linear distance, </p><p>Cosine distance</p>|
 
 1. **Pre trained model**
 
@@ -69,8 +45,9 @@ To tackle the challenge, the decision was made to employ state-of-the-art algori
 ## <a name="_ms1jpxlikzp0"></a>**Results**
 <a name="_xlwijkl5yuj8"></a>*Table 2: Comparison table for the results of the models submitted to the challenge.*
 
+
 | **Model submitted**                   | **TOP 1** | **TOP 5** | **TOP 10** |
-|---------------------------------------|--------|--------|-------|     
+|---------------------------------------|--------|--------|-------|
 | ArcFace                               | 0\.290 | 0\.421 | 0\.505|
 | MTCNN + ArcFace                       | 0\.972 | 0\.981 | 0\.981 |
 | MTCNN + FaceNet (manhattan)           | 0\.953 | 0\.963 | 0\.972 |
@@ -88,36 +65,35 @@ When an image detection is performed, the accuracy steeply increases, although w
 
 <a name="_lhp31t7ydlqm"></a>*Image 1: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 without any image preparation and using Arcface model for image retrieval.*
 
-![](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.003.png)
+![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.003.png)
 
 <a name="_2srr3k0td4s"></a><a name="_mgfhbdrioibl"></a><a name="_e6yit6qomr3s"></a>*Image 2: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using YOLO model for image preparation and ArcFace model for image retrieval.*
 
-![](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.004.png)
+![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.004.png)
 
 <a name="_vdmn30bf7vcg"></a><a name="_a1z2x5pawhd9"></a>*Image 3: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using MTCNN model for image preparation and ArcFace model for image retrieval.*
 
-![](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.005.png)
+![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.005.png)
 ## <a name="_3exfy5ca5gfq"></a>**Discussion**
 As mentioned and analyzed above, the main difference between the two models (YOLO and MTCNN) we used lies in the task they were called upon to fulfill. In simulation practice and thus applied to the dataset provided to us, this led to different results in face detection. 
 
 The following image serves as an illustration of the aforementioned distinctions. MTCNN, a face detection model, overlooked this particular aspect while performing the cropping task, thus necessitating the manual inclusion of the image below into the query folder. On the other hand, YOLO, an object detection algorithm, successfully recognized the same image due to its ability to also identify non-human faces.
 
 <a name="_35nkr43ucl5v"></a>*Image 4: Top 10 results for query image de5764aa9711a4ef4421c95456b764a5c9c837a without using a model for image preparation and ArcFace model for image retrieval.*
-## ![](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.006.png)
+## ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.006.png)
 <a name="_w5uvrxcnla04"></a>The accuracy of the results obtained is certainly due to the specificity of the chosen model. In fact, MTCNN bases its accuracy on face alignment and detection of key facial points; its ability to detect faces in different lighting conditions, orientation were the key points on which we based our choice.
 
 Another notable approach that yielded promising results involved the utilization of the MTCNN and ArcFace combination, as well as the MTCNN and FaceNet combination. However, what set these combinations apart was the employment of a different distance metric-specifically, the Manhattan distance. The Manhattan distance demonstrated superior performance, which can be attributed to its inherent robustness in handling outliers. This alternative strategy showcased its efficacy in achieving favorable outcomes.
 ## <a name="_vjh39coxhfh6"></a>**Conclusions**
-In conclusion, the outcomes affirm the value of incorporating pre-trained models as they greatly contribute to attaining excellent results. Furthermore, it was evident that the integration of other computer vision tasks, such as face recognition and object detection, significantly enhanced the image retrieval task. In our specific scenario, the utilization of MTCNN, a face recognition technique, yielded superior outcomes. Nevertheless, it is crucial to emphasize that the presence of non-real faces in the query posed a challenge for accurate recognition of the algorithm. Moreover, the model's performance in the YOLO algorithm could have been enhanced, specifically when dealing with the cropping of images that have a black or transparent background. Through repeated testing, it became apparent that the model encountered difficulties in accurately handling such images. At the beginning the idea of our team was to implement SphereFace2, which nowadays is the best model due to its angular penalty and equally weighted centers. However, due to the lack of time and personal competences we decided to focus on other models.
+In conclusion, the outcomes affirm the value of incorporating pre-trained models as they greatly contribute to attaining excellent results. Furthermore, it was evident that the integration of other computer vision tasks, such as face recognition and object detection, significantly enhanced the image retrieval task. In our specific scenario, the utilization of MTCNN, a face recognition technique, yielded superior outcomes. Nevertheless, it is crucial to emphasize that the presence of non-real faces in the query posed a challenge for accurate recognition of the algorithm. Moreover, the model's performance in the YOLO algorithm could have been enhanced, specifically when dealing with the cropping of images that have a black or transparent background. Through repeated testing, it became apparent that the model encountered difficulties in accurately handling such images. At the beginning the idea of our team was to implement SphereFace2, which nowadays is the best model due to its angular penalty and equally weighted centers. However, due to the lack of time and personal competences we decided to focus on other models.mnm
+
 ## <a name="_638ec06k3iow"></a>**References**
-- Xie, Lingxi & Hong, Richang & Zhang, Bo & Tian, Qi. (2015). Image Classification and Retrieval are ONE. 3-10. 10.1145/2671188.2749289.
+- Xie, Lingxi & Hong, Richang & Zhang, Bo & Tian, Qi. (2015). “Image Classification and Retrieval are ONE”. 3-10. 10.1145/2671188.2749289.
 - F. Schroff, D. Kalenichenko and J. Philbin, "FaceNet: A unified embedding for face recognition and clustering," *2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*, Boston, MA, USA, 2015, pp. 815-823, doi: 10.1109/CVPR.2015.7298682.
 - J. Deng, J. Guo, N. Xue and S. Zafeiriou, "ArcFace: Additive Angular Margin Loss for Deep Face Recognition," *2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)*, Long Beach, CA, USA, 2019, pp. 4685-4694, doi: 10.1109/CVPR.2019.00482.
 - J. Xiang and G. Zhu, "Joint Face Detection and Facial Expression Recognition with MTCNN," *2017 4th International Conference on Information Science and Control Engineering (ICISCE)*, Changsha, China, 2017, pp. 424-427, doi: 10.1109/ICISCE.2017.95.
-- Redmon, Joseph & Divvala, Santosh & Girshick, Ross & Farhadi, Ali. (2016). You Only Look Once: Unified, Real-Time Object Detection. 779-788. 10.1109/CVPR.2016.91.
-- Liu, Weiyang & Wen, Yandong & Yu, Zhiding & Li, Ming & Raj, Bhiksha & Song, Le. (2017). SphereFace: Deep Hypersphere Embedding for Face Recognition. 10.1109/CVPR.2017.713.
-
-
-![footer line](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.001.png)
+- Redmon, Joseph & Divvala, Santosh & Girshick, Ross & Farhadi, Ali. (2016). “You Only Look Once: Unified, Real-Time Object Detection”. 779-788. 10.1109/CVPR.2016.91.
+- Liu, Weiyang & Wen, Yandong & Yu, Zhiding & Li, Ming & Raj, Bhiksha & Song, Le. (2017). “SphereFace: Deep Hypersphere Embedding for Face Recognition”. 10.1109/CVPR.2017.713.
+![footer line](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.001.png)
 
 

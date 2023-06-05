@@ -5,7 +5,7 @@
 ![linea orizzontale](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.002.png)
 
 
-## <a name="_vukt58vmncn8"></a>**Install** 
+## <a name="_vukt58vmncn8"></a>**Install and configure** 
 
 
 In order to use MTCNN CROPPER you must install these resources<br>
@@ -24,6 +24,7 @@ For the installation of facealignment and tflite-runtime<br>
 For problems with paths just check the initial section of each .py file
 This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
 
+REMEMBER TO LOAD YOUR DATASET IN THE "INPUTS" FOLDER
 
 ## <a name="_vukt58vmntn8"></a>**Introduction** 
 Image retrieval and classification are extensively employed techniques within the field of computer vision, each serving distinct purposes despite their shared goal of identifying similarities in the data. Image retrieval aims to determine similarities among images and rank them when presented with a query, while classification involves training a model to predict the class or group of new data accurately. Notably, classification requires labeled training data, whereas retrieval relies on a distance-based approach without such labels.

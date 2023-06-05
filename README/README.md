@@ -71,7 +71,7 @@ Two models were implemented to complete image retrieval: ArcFace and FaceNet. Th
 
 To tackle the challenge, the decision was made to employ state-of-the-art algorithms known for their exceptional performance. The concept of transfer learning proves to be immensely valuable as it allows the models to leverage the acquired representations and feature extraction capabilities attained through extensive training on large datasets. This approach significantly reduces the time and computational resources required compared to training a model from scratch. Additionally, pretrained models generally possess a wealth of rich and versatile features that can be transferred across tasks, rendering them highly effective for a range of related tasks.
 ## <a name="_ms1jpxlikzp0"></a>**Results**
-<a name="_xlwijkl5yuj8"></a>*Table 2: Comparison table for the results of the models submitted to the challenge.*
+## <a name="_xlwijkl5yuj8"></a>*Table 2: Comparison table for the results of the models submitted to the challenge.*
 
 
 | **Model submitted**                    | **TOP 1**  | **TOP 5**  | **TOP 10** |
@@ -91,15 +91,15 @@ As an example to understand how the various models worked, the results for the s
 When an image detection is performed, the accuracy steeply increases, although with some differences. Indeed, as can be seen comparing images 3 and 4, if the same image retrieval model is used (in this example ArcFace) the differences in the results depend on the face detection model used. More specifically, the combination of MTCNN and ArcFace gave better results than using YOLO with ArcFace.
 
 
-<a name="_lhp31t7ydlqm"></a>*Image 1: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 without any image preparation and using Arcface model for image retrieval.*
+## <a name="_lhp31t7ydlqm"></a>*Image 1: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 without any image preparation and using Arcface model for image retrieval.*
 
 ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.003.png)
 
-<a name="_2srr3k0td4s"></a><a name="_mgfhbdrioibl"></a><a name="_e6yit6qomr3s"></a>*Image 2: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using YOLO model for image preparation and ArcFace model for image retrieval.*
+## <a name="_2srr3k0td4s"></a><a name="_mgfhbdrioibl"></a><a name="_e6yit6qomr3s"></a>*Image 2: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using YOLO model for image preparation and ArcFace model for image retrieval.*
 
 ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.004.png)
 
-<a name="_vdmn30bf7vcg"></a><a name="_a1z2x5pawhd9"></a>*Image 3: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using MTCNN model for image preparation and ArcFace model for image retrieval.*
+## <a name="_vdmn30bf7vcg"></a><a name="_a1z2x5pawhd9"></a>*Image 3: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using MTCNN model for image preparation and ArcFace model for image retrieval.*
 
 ![](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.005.png)
 ## <a name="_3exfy5ca5gfq"></a>**Discussion**

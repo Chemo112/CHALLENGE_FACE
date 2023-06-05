@@ -38,7 +38,7 @@ class Yolov8Face(object):
 		return len(set(extension).intersection(self.acceptedFormat)) == len(set(extension))
 		
 	def _cropSingle(self, filename, confidence, device='cpu'):
-	
+		#confidence, iou, and device, can be changed obtaining relevant results
 		results = self.model(source=filename, conf=confidence, iou=0.70, device=device, 
 			visualize=False, save_crop=False, box=False, verbose=True)
 		return results[0]

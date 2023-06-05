@@ -15,12 +15,12 @@ In order to use MTCNN CROPPER you must install these resources<br>
 pip3 install git+https://github.com/martlgap/face-alignment-mtcnn <br>
 </a>
 
-For problems with packages in MTCNN CROPPER refer to this repository:<br>
+For problems with packages in MTCNN CROPPER refer to this repository or the installation of facealignment and tflite-runtime:<br>
 <a>
 https://github.com/Martlgap/face-alignment-mtcnn 
 </a>
 
-For the installation of facealignment and tflite-runtime<br>
+<br>
 For problems with paths just check the initial section of each .py file
 This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
 

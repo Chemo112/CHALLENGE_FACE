@@ -8,24 +8,23 @@
 ## <a name="_vukt58vmncn8"></a>**Install** 
 
 
-﻿IN ORDER TO USE MTCNN CROPPER YOU MUST INSTALL THIS RESOURCES
-
+In order to use MTCNN CROPPER you must install these resources
 <a>pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime <br>
 </a>
 <a>
 pip3 install git+https://github.com/martlgap/face-alignment-mtcnn <br>
 </a>
 
-FOR PROBLEM WITH PACKAGES IN MTCNN CROPPER REFER TO <br>
+For problems with packages in MTCNN CROPPER refer to this repository:<br>
 <a>
 https://github.com/Martlgap/face-alignment-mtcnn 
 </a>
 
-FOR THE INSTALLATION OF BOTH facealignment and tflite-runtime<br>
+For the installation of facealignment and tflite-runtime<br>
 
-FOR PROBLEMS WITH PATHS JUST CHECK THE INITIAL SECTION OF EACH .PY FILE
+For problems with paths just check the initial section of each .py file
 
-THIS REPOSITORY IS NOT INTENDEED TO BE A FACE RECOGNITION API BUT A SIMPLE EXAMPLE FOR A FACE RECOGNITION CHALLENGE
+This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
 
 
 ## <a name="_vukt58vmntn8"></a>**Introduction** 

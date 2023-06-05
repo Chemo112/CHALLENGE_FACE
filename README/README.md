@@ -1,11 +1,8 @@
-
-
-
 ![header line](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.001.png)
 
-<a name="_i9npdp6lp7kp"></a><a name="_nrnw03t7conb"></a>**“The Algorithm Avengers”**
-Introduction to Machine Learning
-# <a name="_s44548ln3mw"></a>Mattia Chemotti, Juana Sofia Cruz Contento, Maja Dall’Acqua, Barbara Pacetta ![linea orizzontale](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.002.png)
+<a name="_i9npdp6lp7kp"></a><a name="_nrnw03t7conb"></a>Mattia Chemotti, Juana Sofia Cruz Contento, Maja Dall’Acqua, Barbara Pacetta
+# <a name="_s44548ln3mw"></a>**“The Algorithm Avengers”**
+Introduction to Machine Learning ![linea orizzontale](Aspose.Words.53096221-a2d3-441e-80e5-b723a1f0f213.002.png)
 
 
 ## <a name="_vukt58vmncn8"></a>**Install** 
@@ -13,10 +10,11 @@ Introduction to Machine Learning
 
 ﻿IN ORDER TO USE MTCNN CROPPER YOU MUST INSTALL THIS RESOURCES
 
-pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime
-pip3 install git+https://github.com/martlgap/face-alignment-mtcnn
+pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime <br>
 
-FOR PROBLEM WITH PACKAGES IN MTCNN CROPPER REFER TO 
+pip3 install git+https://github.com/martlgap/face-alignment-mtcnn <br>
+
+FOR PROBLEM WITH PACKAGES IN MTCNN CROPPER REFER TO <br>
 https://github.com/Martlgap/face-alignment-mtcnn 
 
 FOR THE INSTALLATION OF BOTH facealignment and tflite-runtime

@@ -93,7 +93,7 @@ When an image detection is performed, the accuracy steeply increases, although w
 
 <a name="_lhp31t7ydlqm"></a>*Image 1: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 without any image preparation and using Arcface model for image retrieval.*
 
-![linea orizzontale](Aspose.Words.2a1ee98f-b5c7-44b0-8728-d9a5d610131f.003.png)
+![](2a1ee98f-b5c7-44b0-8728-d9a5d610131f.003.png)
 
 <a name="_2srr3k0td4s"></a><a name="_mgfhbdrioibl"></a><a name="_e6yit6qomr3s"></a>*Image 2: Top 10 results for query image dc5931b0f36e4a48abdd8f0d16af6221622508c5 using YOLO model for image preparation and ArcFace model for image retrieval.*
 

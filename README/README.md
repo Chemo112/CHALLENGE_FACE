@@ -21,9 +21,7 @@ https://github.com/Martlgap/face-alignment-mtcnn
 </a>
 
 For the installation of facealignment and tflite-runtime<br>
-
 For problems with paths just check the initial section of each .py file
-
 This repository is not intended to be a face recognition api but a simple example for a face recognition challenge
 
 

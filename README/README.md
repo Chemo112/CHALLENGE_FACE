@@ -10,18 +10,11 @@
 
 In order to use MTCNN CROPPER you must install these resources<br>
 
-'''
+```pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime
+   pip3 install git+https://github.com/martlgap/face-alignment-mtcnn
+```
 
-pip3 install tflite-runtime --find-links https://google-coral.github.io/py-repo/tflite-runtime <br>
-
-'''
-
-
-'''
-
-pip3 install git+https://github.com/martlgap/face-alignment-mtcnn <br>
-
-'''
+<br>
 
 
 For problems with packages in MTCNN CROPPER refer to this repository or the installation of facealignment and tflite-runtime:<br>
